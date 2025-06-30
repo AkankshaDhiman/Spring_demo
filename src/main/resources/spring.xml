@@ -18,20 +18,20 @@
     </bean>
 
     <bean id="student1" class="com.example.Student">
-        <constructor-arg value="22"/>
-        <constructor-arg value="joe"/>
-        <constructor-arg value="45"/>
+<!--        <constructor-arg value="22"/>-->
+<!--        <constructor-arg value="joe"/>-->
+<!--        <constructor-arg value="45"/>-->
         <constructor-arg value="lap1"/>
 
         <property name="laptops">
         <list>
-            <ref bean="lap1"/>
             <ref bean="lap2"/>
+            <ref bean ="lap1"/>
         </list>
     </property>
     </bean>
 
-    <bean id ="lap1" class="com.example.Student">
+    <bean id ="lap1" class="com.example.Laptop">
         <property name="model" value="Alienware"/>
     </bean>
     <bean id ="lap2" class = "com.example.Laptop">
